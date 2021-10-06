@@ -7,16 +7,30 @@
   header h2 {
     font-size: 1.5rem;
    }
-  header img {
+  header img, .siteLogo {
     height: 100px;
   }
 
-  #signInLink {
+  header img {
+    margin-left: 2vw;
+  }
+
+  #accountNav li:nth-child(1) {
+    border-style: none;
+  }
+
+  #accountNav li:nth-child(2){
     display: block;
   }
 
   .banner button {display: none;}
-  #primaryNav {display: block;}
-  #primaryNav li {width: 25%; float: left;}
+  #primaryNav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+  }
+  #primaryNav li {flex-basis: auto;}
+  #primaryNav a {padding: .7rem 1rem;}
+
 
 }

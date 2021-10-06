@@ -1,4 +1,10 @@
 /*CSS styles to change the layout for large sized screens(Computer screens)*/
 @media only screen and (min-width: 1024px) {
-    
+
+
+  #primaryNav {
+    margin-left: 2vw;
+    align-items: flex-start;
+  }
+  
 }
