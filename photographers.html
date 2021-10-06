@@ -16,8 +16,30 @@
     </head>
     <body>
       <header>
+        <div class="row limited banner">
+          <button id="hamburgerBtn">&#9776;</button>
+          <div class="siteLogo">
+            <img src="img\favicon.png" alt="Photo Central logo">
+            <div class="logoName">
+              <h1>Photo</h1>
+              <h2>Central</h2>
+            </div>
+          </div>
+          <nav aria-label="account" id="accountNav">
+            <ul>
+              <li><a href="signUp.html">Sign Up</a></li>
+              <li><a href="login.html">Sign In</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <nav>
+      <nav aria-label="primary">
+        <div class="row limited">
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="photographers.html">Photographers</a></li>
+          </ul>
+        </div>
       </nav>
       <main>
         <div id="gallery" class="row limited">  <!--Container to display all photographer cards in-->
@@ -27,5 +49,6 @@
       </main>
       <footer>
       </footer>
+      <script src="js/menuToggle.js"></script>
     </body>
 </html>
