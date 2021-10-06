@@ -1,4 +1,22 @@
 /*CSS styles to change the layout for medium sized screens(Tablets)*/
 @media only screen and (min-width: 768px) {
-    
+
+  header h1 {
+    font-size: 2.85rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+   }
+  header img {
+    height: 100px;
+  }
+
+  #signInLink {
+    display: block;
+  }
+
+  .banner button {display: none;}
+  #primaryNav {display: block;}
+  #primaryNav li {width: 25%; float: left;}
+
 }

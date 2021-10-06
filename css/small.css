@@ -12,3 +12,113 @@ html{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Setting elements to use all availale space*/
+html, body, main {
+  height: 100%;
+}
+
+.limited {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+main {
+  background-color: #ffffe6;
+}
+
+/**HEADER**/
+header, #accountNav {
+  background-color: #cfc;
+}
+
+header {
+  margin-bottom: 0;
+  display: flex;
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+}
+header h1 {
+	padding: .5rem 0 0 0;
+	font-size: 1.95rem;
+}
+header h2{
+	padding: .2rem 0 0 0;
+	font-size:1.05rem;
+}
+
+#accountNav a{
+  color: black;
+}
+
+.banner {
+  justify-content: space-between;
+}
+
+.siteLogo {
+  display: flex;
+}
+
+.siteLogo img {
+  height: 85px;
+  padding-right: 10px;
+}
+
+button#hamburgerBtn {
+    background: none;
+    border:none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+#signInLink {
+  display: none;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #004d00;
+}
+
+nav ul {
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  list-style-type: none;
+  flex-basis: 25%;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active {background-color: rgba(0,0,0,0.5);}
+nav a:hover {background-color: rgba(0,0,0,0.2);}
+#primaryNav.open {display: block;}
+#primaryNav {display: none;}
