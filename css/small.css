@@ -1,25 +1,27 @@
 /*CSS styles for most elements of the website and establishes the layout for small screens(Phones)*/
 
 /*Make sure text sizes are the same across browsers*/
-html{
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /*Make sure all browsers use the same box-sizing for elements*/
-*{
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 
 /*Setting elements to use all availale space*/
-html, body, main {
+html,
+body,
+main {
   height: 100%;
 }
 
@@ -30,7 +32,6 @@ html, body, main {
 
 .row {
   display: flex;
-  /*flex-wrap: wrap;*/
   flex-basis: 100%;
 }
 
@@ -39,7 +40,8 @@ main {
 }
 
 /**HEADER**/
-header, #accountNav {
+header,
+#accountNav {
   background-color: #cfc;
 }
 
@@ -48,29 +50,23 @@ header {
   display: flex;
 }
 
-header h1, header h2 {
-    margin: 0;
-    color: #fff;
-    font-weight: 300;
-    font-style: italic;
+header h1,
+header h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
 }
+
 header h1 {
-	padding: .5rem 0 0 0;
-	font-size: 1.95rem;
-}
-header h2{
-	padding: .2rem 0 0 0;
-	font-size:1.05rem;
+  padding: .5rem 0 0 0;
+  font-size: 1.95rem;
 }
 
-#accountNav li {
-  border: 3px solid #fff;
-  padding: 0 10px;
-  font-size: 1rem;
-  border-radius: 15%;
-  margin-right: 5px;
+header h2 {
+  padding: .2rem 0 0 0;
+  font-size: 1.05rem;
 }
-
 
 .banner {
   justify-content: space-between;
@@ -87,25 +83,34 @@ header h2{
 }
 
 button#hamburgerBtn {
-    background: none;
-    border:none;
-    color: #fff;
-    font-size: 2.4rem;
-    cursor: pointer;
-    padding: 0 30px 0 2vw;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+  padding: 0 30px 0 2vw;
 }
 
-#accountNav li:nth-child(2){
+/**ACCOUNT NAVIGATION**/
+#accountNav li {
+  border: 3px solid #fff;
+  padding: 0 10px;
+  font-size: 1rem;
+  border-radius: 15%;
+  margin-right: 5px;
+}
+
+#accountNav li:nth-child(2) {
   display: none;
 }
 
-/* NAVIGATION */
+/* SITE NAVIGATION */
 nav {
   background-color: #004d00;
 }
 
 nav ul {
-  margin:0;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -117,19 +122,30 @@ nav li {
 }
 
 nav a {
-    display: block;
-    padding: .8rem 0;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
+  display: block;
+  padding: .8rem 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
 }
 
-nav li.active {background-color: rgba(0,0,0,0.5);}
-nav a:hover {background-color: rgba(0,0,0,0.2);}
-#primaryNav.open {display: block;}
-#primaryNav {display: none;}
+nav li.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-/**Photograpers Page**/
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#primaryNav.open {
+  display: block;
+}
+
+#primaryNav {
+  display: none;
+}
+
+/**PHOTOGRAPHERS PAGE**/
 
 #gallery {
   display: flex;
@@ -148,16 +164,19 @@ nav a:hover {background-color: rgba(0,0,0,0.2);}
 
 .photoCard img {
   width: 45%;
-  height: 80%;
-  margin-top: 10px;
-  margin-left: 10px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.photoInfo{
+.photoInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 15px 2vw;
+  width: 45%;
+  height: auto;
 }
 
 .photoInfo h3 {
