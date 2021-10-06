@@ -128,3 +128,53 @@ nav li.active {background-color: rgba(0,0,0,0.5);}
 nav a:hover {background-color: rgba(0,0,0,0.2);}
 #primaryNav.open {display: block;}
 #primaryNav {display: none;}
+
+/**Photograpers Page**/
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photoCard {
+  display: flex;
+  flex-basis: 90%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 1vw;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.photoCard img {
+  width: 45%;
+  height: 80%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.photoInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 2vw;
+}
+
+.photoInfo h3 {
+  margin: 0;
+}
+
+.photoInfo h5 {
+  margin-bottom: 0;
+}
+
+.eventTypes {
+  list-style-type: none;
+  padding-left: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eventTypes li {
+  margin: 1px 5px;
+}

@@ -6,5 +6,9 @@
     margin-left: 2vw;
     align-items: flex-start;
   }
-  
+
+  .photoCard {
+    flex-basis: 25%;
+  }
+
 }
